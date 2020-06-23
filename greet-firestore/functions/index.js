@@ -1,7 +1,4 @@
 const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-
-admin.initializeApp();
 
 exports.greetFirestore = functions.handler.firestore.document.onWrite(
   async (change) => {
